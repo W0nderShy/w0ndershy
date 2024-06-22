@@ -1,0 +1,115 @@
+/* <i class="bi bi-eye-fill"></i> dark mode的显示图标通过更换class来实现? */
+
+body{
+    background-color: rgba(0, 10, 12, 0.901);
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar-trigger{
+    position: flex;
+    width:10px;
+    height:100vh;
+    text-indent: -9999px;
+}
+
+.sidebar{
+    background-color: antiquewhite;
+    position: flex;
+    width:250px;
+    height:100vh;
+    margin-right: 200px;
+    display: none;
+    transform: translateY(-100vh);
+}
+
+
+
+/* .sidebar.close{
+    display:block;
+    z-index:1;
+    transition: var(0.3s) ;
+
+} */
+
+.showup{
+    transform: translateY(-100vh);
+
+}
+.profile{
+    position: flex;
+    padding: 10PX;
+
+
+}
+.profile img{
+    border-radius: 10px;
+}  
+
+
+/* .btn{
+    background-color: rgb(194, 240, 225);
+    position: relative;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-20vh);
+    border-radius: 15px;
+    margin-left: 240px;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.btn div{
+    transform: translateY(4px) ;
+    color:white;
+} */
+
+ul.index li{ 
+    list-style: none;
+    text-indent: -30px;
+    position: flex;
+    height: 100%;
+    margin-top: 50px;
+
+}
+
+ul.index a{
+    text-decoration: none;
+    color: rgb(97, 99, 87);
+    font-size: 30px;
+}
+
+
+.pictures{
+    position: relative;
+}
+
+.pictures.close{
+    transform: translateY(-100vh);
+}
+div.pic1{
+    position: absolute;
+    left:43vh;
+    top: -90vh;
+}
+
+figcaption.pic1-fig{
+    text-align: center;
+    list-style: none;
+}
+
+li.pic1-head{
+    font-weight: 500;
+    font-size: 24px;
+    color: rgb(204, 167, 2);
+    transform: translateY(20px);
+    font-family: SF Pro SC, SF Pro Display, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+li.pic1-fig-intro{
+    font-weight: 200;
+    color: aliceblue;
+    opacity: 0.8;
+    transform: translateY(30px);
+    font-family: SF Pro SC, SF Pro Display, SF Pro Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif;
+}

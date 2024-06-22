@@ -1,0 +1,5 @@
+DOM设计
+header部分：
+CSS：logo(img maybe)+gallery+notes+others+contact  5个url链接
+JS:跟随页面(ul)、notes的mouseover的显示模版
+

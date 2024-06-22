@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallerystyles.css">
+    <title>Gallery!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <section class="sidebar-trigger">
+        sidebar-trigger
+    </section>
+
+    <nav id="sidebar" class="sidebar">
+        <header>
+             <div class="profile">
+                        <img src="iamges/profile.jpg" alt="profile photo"     width="100" height="100" >
+                    <div class="name">倒转的河</div>
+                </div>
+            </header>
+    
+            <ul class="index">
+                <li><a href="2023.html">2023</a></li>
+                <li><a href="2024.html">2024</a></li>
+                <li><a href="2025.html">2025</a></li>
+            </ul>
+    
+    
+           
+            <ul class="icons">
+                <i class=""></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </ul>
+    
+        <!-- <section class="btn">
+    
+            <div class="close">        
+                <i class="bi bi-chevron-bar-left"></i>
+            </div>
+    
+        </section> -->
+     
+    
+            <section class="dark mode off">
+                <i class="bi bi-eye"></i>
+            </section>
+    
+
+        
+    </nav>
+
+
+    <section id="pictures" class="pictures">
+        <div class="pic1">
+            <img src="gallery/pic1.png" class="pic2" alt="the-dying-of-the-sun" width="926" height="345">
+            <figcaption class="pic1-fig">
+                <li class="pic1-head">流云逝光</li>
+                <li class="pic1-fig-intro">
+                    使用长曝光技术，在日落半小时前，太阳正好在雨后快速移动的云后出现，云流动的方向在长曝光下染上金色。
+                </li>
+            </figcaption>
+
+        </div>
+
+        <div>
+            <img src="gallery/pic2" alt="">
+            <figcaption></figcaption>
+
+        </div>
+
+        <div>
+            <img src="gallery/" alt="">
+            <figcaption></figcaption>
+
+        </div>
+
+        <div>
+            <img src="gallery/" alt="">
+            <figcaption></figcaption>
+
+        </div>
+        
+   
+    </section>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+
+         $(function(){
+            $('.sidebar-trigger').on('mouseover',function(){
+                $("nav").toggle();
+                // $("nav").addClass('close');
+                $("section[id='pictures']").addClass('close');
+                var test=$("nav").attr('class');
+            });
+                $(function(){
+                    $("nav").on('mouseleave',function(){
+                        $("nav").toggle();
+                        $("section[id='pictures']").removeClass('close');
+                    });
+                });
+         });
+
+    </script>
+</body>
+</html>

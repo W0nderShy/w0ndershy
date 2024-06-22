@@ -1,0 +1,81 @@
+header {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    opacity: 0.9;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica Neue,Arial, Helvetica, sans-serif;
+}
+
+ul{
+    margin: 0px;
+    padding: 10px;
+}
+
+li:first-child{
+    margin-left: 0px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: 100px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+div.backimg{
+    background-image: url('iamges/backimg.png') ;
+    background-size: cover;
+    text-indent: -99999px;
+    object-fit: cover;
+    position: flex;
+    height: 400px;
+    
+}
+
+.panel{
+    background-color: aliceblue;
+    margin-bottom: 0px;
+    text-indent: 3%;
+    margin-top: -400px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    position: flex;
+    opacity: 0.9;
+}
+
+ .panel a{
+    text-decoration: none;
+    color: black;
+} 
+
+.p1{
+    font-weight: 400;
+    transform: translateY(50px);
+    font-size: 20px;
+}
+.p2{
+    transform: translateY(50px);
+    font-size: 26px;
+    padding-top: 0px;
+ 
+}
+
+
+.panel.active{
+    display: flex;
+}
